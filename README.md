@@ -64,9 +64,6 @@ Analista de Datos enfocado en transformar datos crudos en decisiones de negocio 
 1. **Enfoque en Business Intelligence:** No solo entrego datos, entrego dashboards accionables para negocio.
 2. **Portafolio Web Propio:** Demuestro habilidades técnicas desarrollando mi propia presencia web (HTML/CSS), mostrando versatilidad.
 
-## 2. Diseño
-- **Enlace a Figma:** [PEGAR AQUÍ TU LINK DE FIGMA]
-
-## 3. Sitio Web
-- **Enlace a GitHub Pages:** [PEGAR AQUÍ TU LINK DE GITHUB PAGES]
-- **Enlace al Repositorio:** [PEGAR AQUÍ TU LINK DEL REPOSITORIO]
+## Sitio Web
+- **Enlace a GitHub Pages:** [(https://cedjoslyn00.github.io/Actividad-1/)]
+- **Enlace al Repositorio:** [(https://github.com/cedJoslyn00/Actividad-1)]
