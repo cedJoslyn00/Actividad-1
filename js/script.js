@@ -1,6 +1,5 @@
 'use strict';
 
-/* ===== CURSOR PERSONALIZADO ===== */
 const cursor = document.getElementById('cursor');
 const cursorDot = document.getElementById('cursorDot');
 
@@ -31,7 +30,6 @@ if (cursor && cursorDot) {
     });
 }
 
-/* ===== HEADER: SCROLL STATE ===== */
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
     if (window.scrollY > 40) {
@@ -41,7 +39,6 @@ window.addEventListener('scroll', () => {
     }
 }, { passive: true });
 
-/* ===== NAVEGACIÓN ACTIVA ===== */
 const sections = document.querySelectorAll('section[id]');
 const navLinks  = document.querySelectorAll('.nav-link');
 
@@ -58,7 +55,6 @@ const observerNav = new IntersectionObserver((entries) => {
 
 sections.forEach(s => observerNav.observe(s));
 
-/* ===== HAMBURGER / MENÚ MOBILE ===== */
 const hamburger = document.getElementById('hamburger');
 const nav = document.getElementById('nav');
 
@@ -69,7 +65,6 @@ hamburger.addEventListener('click', () => {
     document.body.style.overflow = isOpen ? 'hidden' : '';
 });
 
-// Cerrar al clicar un enlace
 nav.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', () => {
         nav.classList.remove('open');
@@ -78,7 +73,6 @@ nav.querySelectorAll('.nav-link').forEach(link => {
     });
 });
 
-/* ===== REVEAL ON SCROLL ===== */
 const revealEls = document.querySelectorAll('.reveal');
 const observerReveal = new IntersectionObserver((entries) => {
     entries.forEach((entry, i) => {
@@ -100,7 +94,6 @@ revealEls.forEach((el, i) => {
     observerReveal.observe(el);
 });
 
-/* ===== BARRAS DE HABILIDADES ===== */
 const skillBars = document.querySelectorAll('.sb-fill');
 const observerBars = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -115,7 +108,6 @@ const observerBars = new IntersectionObserver((entries) => {
 
 skillBars.forEach(bar => observerBars.observe(bar));
 
-/* ===== TOGGLE DETALLES DE PROYECTOS ===== */
 const toggleBtns = document.querySelectorAll('.btn-toggle');
 toggleBtns.forEach(btn => {
     btn.addEventListener('click', () => {
@@ -130,7 +122,6 @@ toggleBtns.forEach(btn => {
     });
 });
 
-/* ===== FORMULARIO DE CONTACTO ===== */
 const form = document.getElementById('contactForm');
 const formSuccess = document.getElementById('formSuccess');
 
@@ -170,7 +161,6 @@ if (form) {
     });
 }
 
-/* ===== SCROLL TO TOP ===== */
 const scrollTopBtn = document.getElementById('scrollTop');
 window.addEventListener('scroll', () => {
     scrollTopBtn.classList.toggle('show', window.scrollY > 500);
@@ -180,7 +170,6 @@ scrollTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
 });
 
-/* ===== SMOOTH SCROLL para todos los anchors ===== */
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', (e) => {
         const target = document.querySelector(anchor.getAttribute('href'));
@@ -193,7 +182,6 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/* ===== ANIMACIÓN NÚMEROS HERO (contador) ===== */
 function animateCounter(el, target, duration = 1500) {
     let start = 0;
     const step = target / (duration / 16);
